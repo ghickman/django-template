@@ -1,0 +1,19 @@
+<!doctype html>
+<head>
+  <link rel="stylesheet" href="{{ STATIC_URL }}styles/main.css">
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width">
+
+  <title>{% block title %}{% endblock title %}</title>
+</head>
+
+{% block body %}
+<body>
+    <header>{% block header %}{% endblock header %}</header>
+    <div class="content">{% block content %}{% endblock content %}</div>
+    <footer>{% block footer %}{% endblock %}</footer>
+</body>
+{% endblock %}
+</html>
